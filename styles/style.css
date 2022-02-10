@@ -316,6 +316,7 @@ a {
 }
 
 .about_img:hover .social {
+    background-color: #898989;
     opacity: 1;
 }
 
