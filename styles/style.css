@@ -298,6 +298,7 @@ a {
     text-align: center;
     width: 100%;
     max-width: 263px;
+
 }
 
 .about_item h1 {
@@ -314,6 +315,11 @@ a {
     position: relative;
 }
 
+.about_img:hover .social {
+    opacity: 1;
+}
+
+
 .social {
     display: flex;
     justify-content: center;
@@ -324,6 +330,10 @@ a {
     left: 0;
     bottom: 0;
     right: 0;
+    
+    opacity: 0;
+
+    transition: opacity .1s linear;
 }
 .social_item {
     
@@ -331,10 +341,19 @@ a {
     height: 28px;
     margin: 0 4px 0 4px;
     text-decoration: none;
+    
+}
+
+.social_item:hover .svg_img {
     border: 1px solid #000;
+    background-color: #c0301c;
 }
 
 .svg_img {
     width: 20px;
     height: 20px;
+
+    fill: #ffffff;
+
+    padding: 4px 4px 4px 4px;
 }
