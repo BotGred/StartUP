@@ -195,15 +195,15 @@ a {
     text-align: center;
 }
 
-.servic_img {
+/* .servic_img {
     
-}
+} */
 
 .servic_img > h1 {
     text-transform: uppercase;
 }
 
-.servic_img > h1, h2 {
+.servic_img h1, h2 {
     font-size: 14px;
 }
 
@@ -249,6 +249,7 @@ a {
 
 .aboutus {
     background-color: #f8f8f8;
+    padding-bottom: 99px;
 }
 
 .about_title {
@@ -290,9 +291,37 @@ a {
     justify-content: space-between;
     width: 100%;
     max-width: 1140px;
+    
 }
 
 .about_item {
+    text-align: center;
     width: 100%;
     max-width: 263px;
+}
+
+.about_item h1 {
+    color: #555555;
+    font-size: 14px;
+}
+
+.about_item h2 {
+    color: #898989;
+    font-size: 13px;
+}
+
+.about_img {
+}
+
+.social {
+     
+     
+}
+.social_item {
+    margin: 0 4px 0 4px;
+}
+
+.svg_img {
+    width: 28px;
+    height: 28px;
 }
