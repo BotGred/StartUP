@@ -2,56 +2,326 @@ body {
     margin: 0;
 }
 
-* {
-    box-sizing: border-box;
+h1 {
+    font-family: 'Montserrat', sans-serif;
 }
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+}
+
+a {
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Container */
+
 .container {
+    box-sizing: border-box;
     width: 100%;
-    max-width: 1170px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
-/* Intro */
+/* Header */
 
+.header {
+    padding-top: 45px;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Nav */
+
+.nav {
+    font-size: 14px;
+}
+
+.nav_link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    position: relative;
+
+    transition: color .1s linear;
+}
+
+.nav_link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: gold;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav_link:hover {
+    color: gold;
+}
+
+.nav_link:hover:after {
+    opacity: 1;
+}
+
+/* Intro */
 .intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 810px;
+    height: 850px;
     background-position: center;
-    background-image: url(../images/bg_image.jpg);
+    background-attachment: scroll;
+    background-image: url(../images/homebg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.intro__inner {
-    
+.intor_inner {
+    flex-basis: 200px;
     text-align: center;
 }
 
 .intro_title {
-    font-family: 'Russo One', sans-serif;
     font-size: 48px;
-    color: #fff;
-    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .intro_subtitle {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 24px;
-    color: #fff;
-    font-weight: normal;
+    font-size: 20px;
+    color: white;
+    text-align: center;
 }
 
-.tables {
-    /* background-color: black; */
+/* Button */
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 50px;
+
+    font-size: 14px;
+    padding: 10px 15px;
+    
+    border: 2px solid #fff;
+
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #c0301c;
+}
+
+/* Services */
+
+.servic {
+    padding: 80px 0;
+}
+
+.servic_header {
+    display: flex;
     text-align: center;
     
 }
 
-.tables h2, .tables span {
-    /* background: #000; */
-    color:white;
+.servic_title {
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
 }
 
+.servic_title:after {
+   content: "";
+   display: block;
+   width: 60px;
+   height: 3px;
+   margin: 30px auto 30px;
+
+   background-color: black;
+}
+
+.servic_subtitle {
+    font-size: 16px;
+    color: black;
+}
+
+/* Servic info */
+
+.servic_info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1140px;
+    margin: 70px auto 0;
+}
+
+.servic_item {
+    width: 30%;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* .servic_img {
+    
+} */
+
+.servic_img > h1 {
+    text-transform: uppercase;
+}
+
+.servic_img h1, h2 {
+    font-size: 14px;
+}
+
+.stg_img1 {
+    display: block;
+    
+    background-image: url(../images/servic1.jpg);
+
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.stg_img1:hover {
+    background-image: url(../images/servic1h.jpg);
+}
+
+.stg_img2 {
+    display: block;
+    background-image: url(../images/servic2.jpg);
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.stg_img2:hover {
+    background-image: url(../images/servic2h.jpg);
+}
+
+.stg_img3 {
+    display: block;
+    background-image: url(../images/servic3.jpg);
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.stg_img3:hover {
+    background-image: url(../images/servic3h.jpg);
+}
+
+/* About */
+
+.aboutus {
+    background-color: #f8f8f8;
+    padding-bottom: 99px;
+}
+
+.about_title {
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 80px;
+}
+
+.about_title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto 30px;
+    background-color: black;
+}
+
+.about_subtitle {
+    font-size: 14px;
+    text-align: center;
+}
+
+.about_info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 65px;
+}
+
+.about_info_text {
+    font-size: 14px;
+    width: 100%;
+    max-width: 555px;
+}
+
+.aboutus_staf {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1140px;
+    
+}
+
+.about_item {
+    text-align: center;
+    width: 100%;
+    max-width: 263px;
+}
+
+.about_item h1 {
+    color: #555555;
+    font-size: 14px;
+}
+
+.about_item h2 {
+    color: #898989;
+    font-size: 13px;
+}
+
+.about_img {
+}
+
+.social {
+     
+     
+}
+.social_item {
+    margin: 0 4px 0 4px;
+}
+
+.svg_img {
+    width: 28px;
+    height: 28px;
+}
