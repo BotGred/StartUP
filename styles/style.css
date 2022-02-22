@@ -476,8 +476,8 @@ a {
 }
 
 .latest__svg {
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
 
     fill: #c0301c;
 }
@@ -512,4 +512,6 @@ a {
     font-size: 16px;
     margin-right: 10px;
     color: #c0301c;
+
+    text-transform: uppercase;
 }
