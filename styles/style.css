@@ -376,3 +376,140 @@ a {
 
     padding: 4px 4px 4px 4px;
 }
+
+/* Latest Works */
+
+.latest_title {
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 80px;
+}
+
+.latest_title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto 30px;
+    background-color: black;
+}
+
+.nav__latest {
+    text-align: center;
+
+    margin-bottom: 65px;
+}
+
+.latest_link {
+    margin: 0 13px;
+    color: #555555;
+    text-decoration: none;
+}
+
+.latest_link:hover {
+    color:#c0301c;
+}
+
+/* latest_works */
+
+.latest_section {
+    margin-bottom: 100px;
+}
+
+.latest_works {
+    display: flex;
+
+    margin-bottom: 30px;
+}
+
+.latest__inner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* .latest_item {
+
+} */
+
+.latest_item:hover .latest_img::before {
+    opacity: 1;
+}
+
+.latest_img {
+    position: relative;
+}
+
+.latest_img::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    
+    opacity: 0;
+    background-color: rgba(192, 48, 28, 0.7);
+    transition: opacity .2s linear;
+
+}
+
+.latest_img:hover .latest__view {
+    opacity: 1;
+}
+
+.latest__view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.latest__svg {
+    width: 12px;
+    height: 12px;
+
+    fill: #c0301c;
+}
+
+.latest-title {
+    
+    color: #ffff;
+    margin-bottom: 0;
+}
+.latest-sub-title {
+    
+    color: #ffff;
+
+}
+.latest_btn {
+    display: flex;
+    position: relative;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 38px;
+
+    border: none;
+
+    background-color: #fff;
+
+    text-decoration: none;
+}
+.latest_btn_title {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #c0301c;
+}
