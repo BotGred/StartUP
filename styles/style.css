@@ -674,3 +674,26 @@ a {
 .blog-read:hover {
     color:#c0301c;
 }
+
+/* Clients */
+
+.clients {
+    background-color: #f8f8f8;
+    
+}
+
+.clients_img {
+   
+    text-align: center;
+}
+
+.clts_img {
+
+    margin: 80px 20px;
+}
+
+.clients__inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
