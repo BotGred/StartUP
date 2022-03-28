@@ -697,3 +697,22 @@ a {
     flex-direction: column;
     text-align: center;
 }
+
+/* Contact */
+
+.fsize {
+    font-size: 12px;
+    font-weight: 400;
+
+    width: 348px;
+    height: 42px;
+
+
+    margin: 0 15px 21px;
+}
+
+.fsize-area {
+    width: 730px;
+    height: 104px;
+    margin-left: 15px;
+}
